@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Change Ammunition Hub size to match patched texture -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="REEL_AmmoTank"]/size</xpath>
+        <value>
+            <size>(2,1)</size>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="REEL_AmmoTank"]/graphicData/drawSize</xpath>
+        <value>
+            <drawSize>(2,2)</drawSize>
+        </value>
+    </Operation>
+
+    <!-- Change ammo bar to match -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[defName="REEL_AmmoTank"]/comps/li[@Class="PipeSystem.CompProperties_ResourceStorage"]/barSize
+        </xpath>
+        <value>
+            <barSize>(0.10, 0.75)</barSize>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[defName="REEL_AmmoTank"]/comps/li[@Class="PipeSystem.CompProperties_ResourceStorage"]/margin
+        </xpath>
+        <value>
+            <margin>0.04</margin>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[defName="REEL_AmmoTank"]/comps/li[@Class="PipeSystem.CompProperties_ResourceStorage"]/centerOffset
+        </xpath>
+        <value>
+            <centerOffset>(0, 0, 0.30)</centerOffset>
+        </value>
+    </Operation>
+</Patch>
