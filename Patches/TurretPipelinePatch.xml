@@ -39,4 +39,11 @@
             <centerOffset>(0, 0, 0.30)</centerOffset>
         </value>
     </Operation>
+    <!-- Fill bottom-to-top to match the tall bar shape (default fills left-to-right) -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="REEL_AmmoTank"]/comps/li[@Class="PipeSystem.CompProperties_ResourceStorage"]</xpath>
+        <value>
+            <barHorizontal>true</barHorizontal>
+        </value>
+    </Operation>
 </Patch>
