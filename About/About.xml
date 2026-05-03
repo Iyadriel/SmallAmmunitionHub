@@ -15,8 +15,7 @@
     </modDependencies>
     <loadAfter>
         <li>Reel.TurretPipeline</li>
-        <li>jdgg.adaptive.cargoholds</li>
-        <li>honeybadger.wallmountedturretsversiontwo</li>
+<li>honeybadger.wallmountedturretsversiontwo</li>
     </loadAfter>
     <description>
         Smaller Ammunition Hub that might be useful on a gravship.
